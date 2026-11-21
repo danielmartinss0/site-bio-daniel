@@ -1,6 +1,21 @@
 const ebookDownload = document.querySelector("[data-ga-event='clique_baixar_ebook']");
 
+const downloadHelp = document.querySelector(".ajuda-download");
+const isInstagram = /Instagram/i.test(navigator.userAgent);
+const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+  || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isSafari = /Safari/i.test(navigator.userAgent)
+  && !/Chrome|Chromium|CriOS|Edg|OPR|FxiOS|Android/i.test(navigator.userAgent);
+
+if (isInstagram && isAppleMobile) downloadHelp.open = true;
+
 ebookDownload.addEventListener("click", async (event) => {
+  // Keep the real tap as the download trigger in Safari and in-app browsers.
+  if (isAppleMobile || isSafari || isInstagram) {
+    if (isAppleMobile || isInstagram) downloadHelp.open = true;
+    return;
+  }
+
   event.preventDefault();
 
   const link = document.createElement("a");

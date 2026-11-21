@@ -32,19 +32,32 @@
       color: var(--texto); text-decoration: none; font-weight: 650;
     }
     .baixar { color: #101400; background: var(--verde); border-color: var(--verde); }
+    .ajuda-download { margin-top: 18px; color: var(--suave); font-size: 0.875rem; text-align: left; }
+    .ajuda-download summary { cursor: pointer; width: fit-content; text-decoration: underline; }
+    .ajuda-download p { margin: 8px 0 0; }
     a:focus-visible { outline: 3px solid var(--verde); outline-offset: 4px; }
     @media (max-width: 620px) {
       .livro { grid-template-columns: minmax(0, 1fr); text-align: center; margin-top: 12px; }
-      .capa { width: min(53vw, 224px); margin: auto; }
+      .capa { width: min(88%, 360px); margin: auto; }
       .acoes { justify-content: center; }
       .acao { flex: 1 1 135px; }
+      .pagina-ebook .analytics-settings {
+        position: static;
+        display: block;
+        margin: 12px auto max(20px, env(safe-area-inset-bottom));
+        min-height: 44px;
+      }
+      .pagina-ebook .analytics-panel {
+        position: static;
+        margin: 0 auto max(20px, env(safe-area-inset-bottom));
+      }
     }
   </style>
 <link rel="stylesheet" href="css/analytics-consent.css">
 <script defer src="js/analytics.js"></script>
 <script defer src="js/download-ebook.js"></script>
 </head>
-<body>
+<body class="pagina-ebook">
   <main>
     <a class="voltar" href="./">Voltar à bio</a>
     <section class="livro" aria-labelledby="titulo">
@@ -56,6 +69,11 @@
           <a class="acao baixar" href="ebook-comece-por-aqui.pdf" download="ebook-comece-por-aqui.pdf" data-ga-event="clique_baixar_ebook">Baixar grátis</a>
           <a class="acao" href="ebook-comece-por-aqui.pdf" data-ga-event="clique_abrir_pdf">Abrir PDF</a>
         </div>
+        <details class="ajuda-download">
+          <summary>Como salvar o PDF no iPhone</summary>
+          <p>Se estiver no Instagram, toque em ⋯ e escolha “Abrir no Safari” ou “Abrir no navegador”, se essa opção aparecer. Se ela não aparecer, copie o link da página pelo menu e cole no Safari.</p>
+          <p>No Safari, toque em “Abrir PDF” e escolha Compartilhar → Salvar em Arquivos.</p>
+        </details>
       </div>
     </section>
   </main>
