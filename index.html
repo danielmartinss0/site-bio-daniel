@@ -45,6 +45,21 @@
   .btn small { display:block; font-weight:400; font-size:13px; margin-top:3px; color:var(--suave); }
   a:focus-visible { outline:3px solid var(--verde); outline-offset:3px; }
   footer { margin-top:26px; font-size:12px; color:var(--suave); }
+  body > .analytics-settings, body > .analytics-panel {
+    position:static; margin:0 auto 16px;
+  }
+  body > .analytics-settings { display:block; }
+  body > .analytics-panel { margin-bottom:24px; }
+  @media (max-width:600px) {
+    main { padding-top:32px; }
+    .avatar { width:104px; height:104px; }
+    h1 { margin:16px 0 8px; }
+    .sub { font-size:14.5px; }
+    .sub + .sub { margin-top:4px; }
+    .redes { gap:14px; margin:20px 0 24px; }
+    .redes a { width:44px; height:44px; }
+    .redes svg { width:20px; height:20px; }
+  }
 </style>
 <link rel="stylesheet" href="css/analytics-consent.css">
 <script defer src="js/analytics.js"></script>
