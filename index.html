@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#000000">
 <title>Daniel Martins</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --fundo:#0a0a0a; --verde:#d4ff4f; --texto:#f5f5f0; --suave:#a8a89f; --borda:#34342f;
+  :root { --fundo:#000000; --turquesa:#50B3A2; --texto:#FFFFFF; --suave:#A8A8A8; --borda:#636363;
     color-scheme:dark; }
   * { box-sizing:border-box; }
   html,body { margin:0; background-color:var(--fundo); color:var(--texto); overscroll-behavior-y:none; }
   body { font-family:"Inter","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif; min-height:100vh; min-height:100svh;
     padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px)
       env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);
-    background-image:radial-gradient(130% 55% at 50% 0%,#2d3a0c 0%,var(--fundo) 65%);
+    background-image:radial-gradient(130% 55% at 50% 0%,#1B3C36 0%,var(--fundo) 65%);
     background-origin:content-box; background-repeat:no-repeat; }
   main { max-width:440px; margin:0 auto; padding:40px 20px 32px; text-align:center; }
   h1, .t { font-family:"Space Grotesk","Inter","Segoe UI",system-ui,sans-serif; }
   .avatar { position:relative; width:112px; height:112px; margin:0 auto; border-radius:50%;
-    border:3px solid var(--verde); box-shadow:0 0 26px rgba(212,255,79,.4); overflow:hidden; background:#1b2208; }
-  .avatar span { position:absolute; inset:0; display:grid; place-items:center; font-size:34px; font-weight:700; color:var(--verde); }
+    border:3px solid var(--turquesa); box-shadow:0 0 26px rgba(80,179,162,.4); overflow:hidden; background:#122824; }
+  .avatar span { position:absolute; inset:0; display:grid; place-items:center; font-size:34px; font-weight:700; color:var(--turquesa); }
   .avatar img { position:absolute; inset:0; z-index:1; width:100%; height:100%; object-fit:cover; display:block; }
   h1 { font-size:30px; margin:clamp(22px,6vw,28px) 0 12px; letter-spacing:-.3px; }
   .sub { color:var(--suave); font-size:15px; line-height:1.45; margin:0 auto; max-width:320px; }
@@ -31,19 +31,19 @@
     margin:clamp(26px,7vw,32px) 0 clamp(30px,8vw,36px); }
   .redes a { width:46px; height:46px; display:grid; place-items:center; border:1px solid var(--borda); border-radius:12px; color:var(--texto); }
   svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
-  .destaque { display:block; text-align:left; text-decoration:none; background:var(--verde); color:#101400;
+  .destaque { display:block; text-align:left; text-decoration:none; background:var(--turquesa); color:#000000;
     border-radius:22px; padding:18px 20px; margin-bottom:14px; }
   .topo { display:flex; align-items:center; justify-content:space-between; gap:10px; }
   .destaque .t { font-size:21px; font-weight:700; letter-spacing:-.3px; line-height:1.2; }
-  .destaque .s { display:block; font-size:14px; line-height:1.35; margin-top:5px; color:#35400a; }
+  .destaque .s { display:block; font-size:14px; line-height:1.35; margin-top:5px; color:#142D29; }
   .seta { display:block; flex:none; }
   .seta svg { width:24px; height:24px; }
   .btn { display:flex; align-items:center; gap:14px; text-decoration:none; text-align:left; color:var(--texto);
     border:1px solid var(--borda); border-radius:18px; padding:16px 18px; margin-bottom:12px; font-weight:600; font-size:16px; }
-  .btn .ic { color:var(--verde); flex:none; }
+  .btn .ic { color:var(--turquesa); flex:none; }
   .btn .tx { flex:1; }
   .btn small { display:block; font-weight:400; font-size:13px; margin-top:3px; color:var(--suave); }
-  a:focus-visible { outline:3px solid var(--verde); outline-offset:3px; }
+  a:focus-visible { outline:3px solid var(--turquesa); outline-offset:3px; }
   footer { margin-top:26px; font-size:12px; color:var(--suave); }
   body > .analytics-settings, body > .analytics-panel {
     position:static; margin:0 auto 16px;

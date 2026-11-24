@@ -3,9 +3,9 @@
   position: fixed;
   z-index: 10;
   left: max(12px, env(safe-area-inset-left));
-  color: #f5f5f0;
-  background: #181914;
-  border: 1px solid #77786a;
+  color: #FFFFFF;
+  background: #181818;
+  border: 1px solid #777777;
   border-radius: 10px;
   font: 0.875rem/1.4 system-ui, sans-serif;
 }
@@ -28,8 +28,8 @@
   min-height: 40px;
   padding: 6px 10px;
   color: inherit;
-  background: #24251c;
-  border: 1px solid #77786a;
+  background: #242424;
+  border: 1px solid #777777;
   border-radius: 8px;
   font: inherit;
   cursor: pointer;
@@ -37,6 +37,6 @@
 
 .analytics-settings:focus-visible,
 .analytics-panel button:focus-visible {
-  outline: 2px solid #d4ff4f;
+  outline: 2px solid #50B3A2;
   outline-offset: 2px;
 }
